@@ -118,20 +118,7 @@
   transition: background .2s ease-out;
   width: 28px;
 }
-.logout{
-  font-size: 16px;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  padding: .5em 2em;
-  outline: none;
-  border-width: 2px 0;
-  border-style: solid none;
-  border-color: #ff085a #000 #ff085a;
-  border-radius: 6px;
-  background: #f20056;
-  transition: 0.2s;
-}
+
 .bars:before,
 .bars:after {
   background: white;
@@ -320,4 +307,18 @@ flex-direction: row;
   .menu li.button {
       padding-right: 0;
   }
+}
+button a.logout{
+  font-size: 16px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #ff085a #000 #ff085a;
+  border-radius: 6px;
+  background: #f20056;
+  transition: 0.2s;
 }
