@@ -308,7 +308,7 @@ flex-direction: row;
       padding-right: 0;
   }
 }
-button a.logout{
+#logout{
   font-size: 16px;
   display: inline-block;
   color: white;
@@ -321,4 +321,5 @@ button a.logout{
   border-radius: 6px;
   background: #f20056;
   transition: 0.2s;
+  float: right;
 }
