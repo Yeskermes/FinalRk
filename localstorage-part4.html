@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>
+            Sololearn: Learn to Code
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/styleFooter2.css">
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <link rel="stylesheet" type="text/css" href="css/styleForm2.css">
+        <script src="https://kit.fontawesome.com/5a670dfc56.js" crossorigin="anonymous"></script>
+      </head>
+      <body>
+        <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html"><img class="fir" src="img/log1.PNG"><img class="sec" src="img/log2.PNG"></a></li>
+            <li class="item"><a href="courses.html">Courses</a></li>
+            <li class="item"><a href="https://www.sololearn.com/codes">Code Playground</a></li>
+            <li class="item"><a href="https://www.sololearn.com/discuss">Blog</a></li>
+            <li class="item"><a href="https://www.sololearn.com/payments/pro?source=navigation_notloggedin&returnUrl=/home">Get Pro</a></li>
+            <li class="item button"><a href="localstorage-part3.html">Log in</a></li>
+            <li class="item button secondary"><a href="localstorage-part2.html">Register</a></li>
+        </ul>
+    </nav>
+    <main class="main__wrapper">
+    <div class="container">
+        <h2>User login</h2>
+        <form id="form" class="form">
+          <div class="form-control">
+            <p class="label" for="email">Email</p>
+            <input type="email" class="form-group" id="email"  name="email" onblur="checkEmail()">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <p class="label" for="pwd">Password</p>
+            <input type="password" class="form-group" id="psw"  name="pwd" onblur="checkPass()">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+            <p id="left">Forgot Password?</p>
+          <button onclick="saveData()" id="save_btn" class="btn btn-default">Admin</button>
+          <div class="text">New to Sololearn? <a href="localstorage-part2.html">Create an account</a></div>
+        </form>
+      </div>
+      <div>
+      </main>
+    <footer class="sl-footer">
+      <div class="sl-social-links">
+        <div class="sl-social-links__container">
+          <div class="sl-social-links__links-block">
+            <a class="sl-social-links__item" href="https://www.linkedin.com/company/sololearn-inc-/" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(0, 119, 181);">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Follow us on Linkedin</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.facebook.com/SoloLearn" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(66, 103, 178);">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Check out our facebook</span>
+            </a>
+            <a class="sl-social-links__item" href="https://twitter.com/SoloLearn" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(29, 161, 242);">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409937.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">See what we tweet about</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.instagram.com/sololearn/" target="_blank">
+              <div class="sl-social-links__icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Join our instagram</span>
+            </a>
+            <a class="sl-social-links__item" href="https://www.youtube.com/channel/UCXiOyrjY_jqNCFoQTotILTw" target="_blank">
+              <div class="sl-social-links__icon" style="color: rgb(255, 0, 0);">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" style="width: 100%; height: 100%;">
+              </div>
+              <span class="sl-social-links__text">Watch our Youtube</span>
+            </a>
+          </div> 
+        </div>
+      </div>
+      <div class="sl-footer-links">
+        <div class="sl-footer-links__container">
+          <div class="sl-footer-links__links-block">
+            <span class="sl-footer-links__item">
+              <span>Home</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Courses</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Code Playground</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Top Learners</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Blog</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Pro</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>FAQ</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Contact</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Careers
+                <span class="sl-footer-links__highlited-text">We're hiring</span>
+              </span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Terms of Use</span>
+            </span>
+            <span class="sl-footer-links__item">
+              <span>Privacy Policy</span>
+            </span>
+          </div>
+          <div class="sl-footer-links__copyright">Made with
+            <div class="sl-footer-links__heart-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" style="width: 90%; height: 120%;">
+            </div>by &nbsp;
+            <span style="color: #fff" >Sololearn</span>&nbsp;| ©2021
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+      <script type="text/javascript" src="js/validation.js"></script>
+      </body>
+      <script>
+function saveData()
+{
+let email,psw;
+email=document.getElementById("email").value;
+
+psw=document.getElementById("psw").value;
+
+let user_records=new Array();
+user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+if(user_records.some((v)=>{return v.email==email && v.psw==psw}))
+{
+  alert("Login Pass");
+  let current_user=user_records.filter((v)=>{return v.email==email && v.psw==psw})[0]
+ localStorage.setItem('name',current_user.name);
+ localStorage.setItem('email',current_user.email);
+  window.location.href="userPanel.html"
+}
+else
+{
+  alert('Login Fail');
+}
+
+}
+
+         let name=localStorage.getItem('name')?localStorage.getItem('name'):''
+        console.log(name);
+        if(name!='')
+        {
+          alert('Welcome user!');
+          window.location.href="userPanel.html";
+        }
+          </script>
+      </html>
+      
